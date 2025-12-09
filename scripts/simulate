@@ -46,7 +46,7 @@ fi
 if [ "$qemu" != "" ] ; then
     echo "Launching QEMU! Press Ctrl-A, X to exit"
 
-    $qemu -readconfig $qemu_config -kernel $elf -nographic $qemu_options
+    $qemu -readconfig $qemu_config -kernel $elf -nographic $qemu_options -s -S
 elif [ "$spike" != "" ] ; then
     echo "Launching Spike!"
 

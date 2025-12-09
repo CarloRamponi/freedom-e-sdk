@@ -1,8 +1,8 @@
 # Copyright (C) 2020 SiFive Inc
 # SPDX-License-Identifier: Apache-2.0
 
-RISCV_ARCH = rv32imacf_zifencei_zicsr
-RISCV_ABI = ilp32f
+RISCV_ARCH = rv32imac_zifencei_zicsr
+RISCV_ABI = ilp32
 RISCV_CMODEL = medlow
 RISCV_SERIES = None
 
