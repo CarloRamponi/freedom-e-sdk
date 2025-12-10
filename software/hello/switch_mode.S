@@ -1,11 +1,6 @@
 .global switch_to_user_mode
 .type switch_to_user_mode, @function
 switch_to_user_mode:
-
-    li t0, 0xdeadbeef
-    csrw pmpcfg0, t0    /* Set PMP address register 0 */
-    csrr a0, pmpcfg0        /* Read current PMP configuration */
-
     /* Set MPP to 2 (User mode) */
     csrr t0, mstatus
     li t1, ~0x1800    /* Clear MPP bits */
